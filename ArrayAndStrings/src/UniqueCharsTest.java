@@ -14,12 +14,16 @@ public class UniqueCharsTest extends TestCase {
 	 */
 	public void testIsUniqueChars(){
 		
+	    // Test for Empty Str
+	    String empStr = "";
+	    assertTrue(UniqueChars.isUniqueChars(empStr));
+	    
 		// Test for word that has duplicate chars
-		String s1 = "ferfdon";
+		String s1 = "fiefdom";
 		assertFalse(UniqueChars.isUniqueChars(s1));
 		
 		// Test for word that has no duplicate chars
-		String s2 = "fart";
+		String s2 = "serfdom";
 		assertTrue(UniqueChars.isUniqueChars(s2));
 
 	}
