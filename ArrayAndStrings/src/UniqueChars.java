@@ -30,6 +30,7 @@ public class UniqueChars {
 	public static boolean isUniqueChars(String s) {
 		HashMap<Character, Integer> strCtr = new HashMap<>();
 		for(int i = 0; i < s.length(); i++) {
+			// Check if character is unique
 			if(strCtr.containsKey(s.charAt(i))) {
 				return false;
 			}
